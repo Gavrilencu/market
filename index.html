@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">MarketPlace</a>
+      <div class="searchContainer">
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input type="checkbox" onchange="darkTheme()" class="checkbox" />
+            <span class="slid"></span>
+          </label>
+        </div>
+        <input
+          type="search"
+          name=""
+          placeholder="Search:"
+          class="search"
+          id=""
+        />
+        <img src="./img//menu.png" onclick="openMenu()" class="menu" alt="" />
+      </div>
+    </header>
+    <div id="showCart">
+      <a href="" class="list">Informatii despre Magazin</a>
+      <a href="" class="list">Catalogul Produselor</a>
+      <a href="" class="list">Livrare</a>
+      <a href="" class="list">Cariera</a>
+      <a href="" class="list">Servicii</a>
+    </div>
+    <div class="news">
+      <span class="new">Colectie Noua</span>
+      <div class="slider-container">
+        <div class="slider">
+          <img class="images" src="./img/poza1.jpg" alt="Poza 1" />
+          <img class="images" src="./img/poza2.jpg" alt="Poza 2" />
+          <img class="images" src="./img/poza3.jpg" alt="Poza 3" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <footer class="footer">
+      <div class="mainList">
+        <div class="listOne">
+          <a href="" class="goto">Market Place</a>
+          <a href="" class="goto">Info</a>
+          <a href="" class="goto">Catalog</a>
+        </div>
+        <div class="listOne">
+          <a href="" class="goto">Livrare</a>
+          <a href="" class="goto">Cariera</a>
+          <a href="" class="goto">Servicii</a>
+        </div>
+      </div>
+      <span class="copyright">Copyright 2023 by Gavrilencu Grigore</span>
+    </footer>
+  </body>
+</html>
