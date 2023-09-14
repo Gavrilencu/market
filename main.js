@@ -42,4 +42,4 @@ function updateSlider() {
   slider.style.transform = `translateX(${translateX}px)`;
 }
 
-setInterval(nextSlide, 3000); // Schimbă slide-ul la fiecare 2 secunde
+setInterval(nextSlide, 3000); 
