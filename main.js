@@ -1,5 +1,21 @@
 let menu = document.querySelector(".menu");
 let showCart = document.querySelector(".showCart");
+const slider = document.querySelector(".slider");
+const images = document.querySelectorAll(".slider img");
+const slideWidth = images[0].clientWidth;
+let currentIndex = 0;
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlider();
+}
+
+function updateSlider() {
+  const translateX = -currentIndex * slideWidth;
+  slider.style.transform = `translateX(${translateX}px)`;
+}
+
+setInterval(nextSlide, 3000);
 
 function openMenu() {
   var x = document.getElementById("showCart");
@@ -27,19 +43,3 @@ function darkTheme() {
 }
 darkTheme();
 
-const slider = document.querySelector(".slider");
-const images = document.querySelectorAll(".slider img");
-const slideWidth = images[0].clientWidth;
-let currentIndex = 0;
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % images.length;
-  updateSlider();
-}
-
-function updateSlider() {
-  const translateX = -currentIndex * slideWidth;
-  slider.style.transform = `translateX(${translateX}px)`;
-}
-
-setInterval(nextSlide, 3000); // Schimbă slide-ul la fiecare 2 secunde
