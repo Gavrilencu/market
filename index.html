@@ -21,8 +21,9 @@
           name=""
           placeholder="Search:"
           class="search"
-          id=""
+          id="searchInput"
         />
+        <button class="cauta" onclick="searchPage()">Cauta</button>
         <img src="./img//menu.png" onclick="openMenu()" class="menu" alt="" />
       </div>
     </header>
@@ -33,6 +34,7 @@
       <a href="" class="list">Cariera</a>
       <a href="" class="list">Servicii</a>
     </div>
+    <div id="searchResults" ></div>
     <div class="news">
       <span class="new">Colectie Noua</span>
       <div class="slider-container">
@@ -43,7 +45,37 @@
         </div>
       </div>
     </div>
-
+    <span class="colections">Colectia VARA de maiouri SPORT</span>
+    <div class="allBox">
+      <div class="box">
+        <img src="./img/p1.jpeg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p2.jpeg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p3.jpeg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p4.jpeg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p5.jpg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p5.jpeg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+      <div class="box">
+        <img src="./img/p7.jpg" alt="" class="imgBox" />
+        <span class="nameProdus"></span>
+      </div>
+    </div>
     <script src="./main.js"></script>
     <footer class="footer">
       <div class="mainList">
@@ -60,5 +92,6 @@
       </div>
       <span class="copyright">Copyright 2023 by Gavrilencu Grigore</span>
     </footer>
+    <script src="./search.js"></script>
   </body>
 </html>
